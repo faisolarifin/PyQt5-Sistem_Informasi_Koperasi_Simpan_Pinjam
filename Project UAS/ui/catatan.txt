@@ -1,0 +1,7 @@
+model = QSqlQueryModel()
+model.setQuery("SELECT * FROM employee")
+
+for i in range(model.rowCount()):
+    _id = model.record(i).value("id")
+    name = model.record(i).value("name")
+    print _id, name

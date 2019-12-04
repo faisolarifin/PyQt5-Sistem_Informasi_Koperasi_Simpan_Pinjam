@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>920</width>
+    <height>525</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QMdiArea" name="mdi">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>200</width>
+      <height>160</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>920</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="Login"/>
+   </widget>
+   <widget class="QMenu" name="menu_master">
+    <property name="title">
+     <string>Master Data</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="Petugas"/>
+    <addaction name="Anggota"/>
+    <addaction name="Jenis"/>
+   </widget>
+   <widget class="QMenu" name="menu_simpanan">
+    <property name="title">
+     <string>Simpanan</string>
+    </property>
+    <addaction name="Simpanan"/>
+    <addaction name="Penarikan"/>
+    <addaction name="Daftar_Simpanan"/>
+   </widget>
+   <widget class="QMenu" name="menu_pinjaman">
+    <property name="title">
+     <string>Pinjaman</string>
+    </property>
+    <addaction name="Pinjaman"/>
+    <addaction name="Angsuran"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_master"/>
+   <addaction name="menu_simpanan"/>
+   <addaction name="menu_pinjaman"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="Petugas">
+   <property name="text">
+    <string>Data Petugas</string>
+   </property>
+  </action>
+  <action name="Anggota">
+   <property name="text">
+    <string>Data Anggota</string>
+   </property>
+  </action>
+  <action name="Jenis">
+   <property name="text">
+    <string>Data Jenis</string>
+   </property>
+  </action>
+  <action name="Simpanan">
+   <property name="text">
+    <string>Simpanan</string>
+   </property>
+  </action>
+  <action name="Penarikan">
+   <property name="text">
+    <string>Penarikan</string>
+   </property>
+  </action>
+  <action name="Pinjaman">
+   <property name="text">
+    <string>Pinjaman</string>
+   </property>
+  </action>
+  <action name="Angsuran">
+   <property name="text">
+    <string>Angsuran</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="Login">
+   <property name="text">
+    <string>Login</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="Daftar_Simpanan">
+   <property name="text">
+    <string>Daftar Simpanan</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
